@@ -20,9 +20,11 @@ export default function CreateBudgetForm() {
       toast.success(state.success, {
         onClose: () => {
           router.push("/admin");
+          router.refresh();
         },
         onClick: () => {
           router.push("/admin");
+          router.refresh();
         },
       });
     }
